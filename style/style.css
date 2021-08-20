@@ -527,7 +527,7 @@ a {
         padding: 3rem;
     }
 
-    .app-home{
+    .app-home {
         background-size: cover;
     }
 
@@ -781,6 +781,11 @@ a {
 
 
     /* Terceiro Section */
+    .app-comment {
+        width           : 100%;
+        background-image: linear-gradient(rgba(1, 22, 39, 0), #011627 20%);
+    }
+
     .treet-section {
         display   : block;
         width     : 100%;
@@ -844,18 +849,19 @@ a {
 
     /* Quarto section */
 
+    
     .app-comment-content {
         width           : 100%;
         margin          : 0 auto;
         max-width       : 1140px;
         padding         : 0rem;
         position        : relative;
-        background-image: linear-gradient(rgba(1, 22, 39, 0), #011627 20%);
+        background-image: linear-gradient(to top ,rgba(1, 22, 39, 0), #092c47 20%);
     }
 
     .four-section {
         width           : 100%;
-        background-color: transparent;
+        background: none;
         border-radius   : 5px;
         color           : #fff;
         text-align      : center;
@@ -920,12 +926,49 @@ a {
     }
 
     .last-title h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .last-title p {
         font-size: .9rem;
         padding  : 1rem;
+    }
+
+    .footer-item {
+        width  : 100%;
+        display: grid;
+        grid-template-areas:
+            'main main main   main2 main2'
+            'menu menu menu   menu2 menu2'
+            'footer footer footer   footer footer';
+        gap        : 3rem;
+        line-height: 190%;
+        text-align : center;
+    }
+
+    .footer-item h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .folow {
+        grid-area: footer;
+    }
+
+    .about {
+        grid-area: main;
+    }
+
+    .faq {
+        grid-area: main2;
+    }
+
+    .event {
+        grid-area: menu;
+    }
+
+    .contact-us {
+        grid-area: menu2;
     }
 
 }
