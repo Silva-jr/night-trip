@@ -943,7 +943,7 @@ a {
             'footer footer footer   footer footer';
         gap        : 3rem;
         line-height: 190%;
-        text-align : center;
+        text-align : justify;
     }
 
     .footer-item h2 {
